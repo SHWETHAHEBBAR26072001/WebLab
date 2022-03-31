@@ -1,0 +1,35 @@
+*
+{
+    background-color: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  li{
+    display: inline;
+  }
+
+.div1{
+    border: 5px outset red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+.para{
+    border: 5px outset black;
+    border-spacing: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .nav{
+    border: 5px outset red;
+    border-spacing: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align:end;
+  }
+  
