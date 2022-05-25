@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let v = [];
+        let size = prompt("Enter the size of the array");
+        let m, n, i, j;
+        let s1 = [];
+        let s2 = [];
+        for (i = 0; i < size; i++) {
+            v[i] = prompt("Enter the elements of array");
+        }
+        m = prompt("Enter the first splitting value");
+        for (i = 0; i < m; i++) {
+            s1[i] = v[i];
+        }
+        for (i = size - 1; i >= m; i--) {
+            s2[i] = v[i];
+        }
+        document.write(s1);
+        document.write(s2);
+    </script>
+
+
+</body>
+
+</html>
