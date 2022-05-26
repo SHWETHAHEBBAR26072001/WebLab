@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let func=(arr)=>
+{
+let mul=arr.map((num)=>num*10);
+return mul;
+};
+let size=parseInt(prompt("Enter the size of array ->"));
+let arr=new Array(size);
+for(let i=0;i<size;i++)
+{
+arr[i]=parseInt(prompt(i+1+" number "));
+}
+alert(arr +" array after multiplying : "+ func(arr));
+    </script>
+</body>
+</html>

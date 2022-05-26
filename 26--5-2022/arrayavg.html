@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a=[];
+        // var n=prompt("Enter the array size");
+        // for (var i = 0; i < n; i++) {
+
+        //      a[i] = prompt("Enter the element" + (i + 1));
+        // }
+        let arrlen=prompt("Enter the size of an array");
+let arrlenint=parseInt(arrlen);
+let array=[];
+let arrayint=[];
+for(let i=0;i<arrlenint;i++)
+{
+array[i]=prompt("Enter the numbers");
+}
+for(let j=0;j<arrlenint;j++)
+{
+arrayint[j]=parseInt(array[j]);
+}
+let even=(arrayint) =>
+{
+let sum=0;
+for(let k=0;k<arrlenint;k++)
+{
+if(arrayint[k]%2==0)
+{
+sum=sum+arrayint[k];
+}
+}
+document.write(sum);
+}
+console.log(even(arrayint));
+
+            </script>
+</body>
+</html>
