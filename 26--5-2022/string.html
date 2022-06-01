@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let one = prompt("enter the first string");
+        let two = prompt("enter the second string");
+        alert("length of the string " + one + " : " + one.length);
+        alert("length of the string " + two + " : " + two.length);
+        alert("using slice : print one.slice(0,5) -> " + one.slice(0, 5));
+
+        alert(
+            "using slice with negative index : print one.slice(-5,-2) -> " +
+            one.slice(-5, -2)
+        );
+        alert("using substring : print one.substring(0,5) -> " + one.substring(0,
+            5));
+        alert("using substr : print one.substr(2,4) -> " + one.substr(2, 4));
+        alert(
+            "using substr with negative index : print one.substr(-5,3) -> " +
+            one.substr(-5, 3)
+        );
+        alert(
+            "using replace : one.replace('nice' , 'last name') -> " +
+            one.replace("nice", "last name")
+        );
+        alert("using padding : one.padStart(19, 'nice') -> " + one.padStart(19, "nice"))
+
+        alert(
+            "using concatenation : on one->" +
+            one +
+            " and two->" +
+            two +
+            " using one.concat(two) ->" +
+            one.concat(two)
+        );
+    </script>
+</body>
+
+</html>
