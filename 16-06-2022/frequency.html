@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function find_more_than_average(a) {
+            let marks = 0;
+            var count = 0;
+            let len = a.length;
+            for (var x = 0; x < len; x++) {
+                marks += a[x];
+            }
+            document.write("<br>");
+            document.write(marks);
+            document.write("<br>");
+            let avg = marks / len;
+            for (var x = 0; x < len; x++) {
+                if (a[x] > avg) {
+                    count += 1;
+                }
+            }
+            let percentage = (count * 100) / len;
+            document.write(percentage);
+
+        }
+
+        function find_frequency(a) {
+            var freq = [];
+            let len = a.length;
+            for (let i = 0; i < 26; i++) {
+                count = 0;
+                for (let j = 0; j < len; j++) {
+                    if (i == a[j])
+                        count += 1;
+                }
+                a.push(count);
+            }
+            document.write(freq);
+        }
+
+        var arr = [12, 18, 25, 24, 2, 5, 18, 20, 20, 21];
+        // var size = prompt("Enter the size");
+        // for (var i = 0; i < size; i++) {
+        //     arr[i] = prompt("Enter the element" + (i + 1));
+        // }
+        document.write(arr);
+        find_more_than_average(arr);
+        find_frequency(arr);
+    </script>
+</body>
+
+</html>

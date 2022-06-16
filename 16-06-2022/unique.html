@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var sentence = prompt("Enter the string");
+
+        function uniquechar(str1) {
+            var str = str1;
+            var uniq = "";
+            for (var x = 0; x < str.length; x++) {
+
+                if (uniq.indexOf(str.charAt(x)) == -1) {
+                    uniq += str[x];
+
+                }
+            }
+            return uniq;
+        }
+        document.write(uniquechar(sentence));
+    </script>
+</body>
+
+</html>
+<!-- thequickbrownfoxjumpsoverthelazydog -->
